@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: blanchedalmond;
+}
+
+.adayadContainer,
+.adayDegerleriContainer,
+.adayDegerleriForm,
+.sonucContainer {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+#adayad {
+	width: 50%;
+}
+.adayadBtn {
+	margin-top: 20px;
+	display: none;
+}
+.adayOzellikContainer,
+.adayDegerleriBtn,
+.sonucBtn {
+	display: none;
+}
