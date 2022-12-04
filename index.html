@@ -11,41 +11,51 @@
 </head>
 
 <body>
-  <div class="adayAdetContainer">
-    <form action="" class="adayAdet" id="adayAdet">
-      <label for="adayInput">Aday Sayısı</label>
-      <input id="adayInput" type="number">
-      <button id="adatInputBtn" type="submit">Gönder</button>
-    </form>
-  </div>
+  <section>
+    <!-- tamam -->
+    <div id="adayAdet">
+      <form id="adayAdetForm" action="">
+        <input id="adayAdetNum" type="number">
+        <label for="adayAdetNum">Aday Adet</label>
+        <button id="adayAdetBtn" type="submit">Tamam</button>
+      </form>
+    </div>
+    <!-- tamam -->
+    <div id="adayName">
+      <form id="adayNameForm" action="">
 
-  <div class="adayadContainer">
-    <form action="" class="adayadForm">
-      <button class="adayadBtn">Özelliği Gönder</button>
-    </form>
-  </div>
+        <button id="adayNameBtn" class="hidden" type="submit">Adayların İsmimlerini Ekle</button>
+      </form>
+    </div>
 
-  <div class="adayOzellikContainer">
-    <form id="adayOzellikForm">
-      <label for="adayOzellikAdet">Adaylarınızın kaç adet özelliği var?</label>
-      <input id="adayOzellikAdet" type="number">
-      <button id="adayOzellikBtn" type="submit">Gönder</button>
-    </form>
-  </div>
+    <div id="ozAdet" class="hidden">
+      <form id="ozAdetForm" action="">
+        <input id="ozAdetNum" type="number">
+        <label for="ozAdetNum">Ozellik Adet</label>
+        <button id="ozAdetBtn" type="submit">Tamam</button>
+      </form>
+    </div>
 
-  <div class="adayDegerleriContainer">
-    <form class="adayDegerleriForm">
+    <div id="adayOzellik" class="hidden">
+      <form id="adayOzForm" action="">
 
-      <button class="adayDegerleriBtn">Gönder</button>
-    </form>
-  </div>
+        <button id="adayOzBtn" type="submit">Ozellik İsmi Ekle</button>
+      </form>
+    </div>
 
-  <div class="sonucContainer">
-    <form class="sonucForm">
+    <div id="ozellikDegerlerContainer">
+      <form id="ozellikDegerler" action="">
 
-      <button class="sonucBtn">Gönder</button>
-    </form>
-  </div>
+        <button id="OzBtn" class="hidden" type="submit">Ozellik Degerleri Ekle</button>
+      </form>
+    </div>
+
+    <div id="sonDegerlerme">
+      <form action="" id="sonDegerlemeForm">
+        <button id="sonDegerlemeBtn" class="hidden">Karar Ver!</button>
+      </form>
+    </div>
+  </section>
 </body>
 
 </html>
