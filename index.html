@@ -10,21 +10,48 @@
   <title>Decider</title>
 </head>
 
+<header>
+  <nav>
+    <a href="index.html"><img src="logo2.png" alt="svg" id="logo" class="logo"></a>
+
+    <ul class="navItems">
+      <li class="navItem"> <a href="">Nedir</a> </li>
+      <li class="navItem"> <a href="">Nasıl Kullanılır</a> </li>
+      <li class="navItem"> <a href="">Sözlüğe Dön</a> </li>
+      <li class="navItem"><a href="">Hakkımızda</a></li>
+    </ul>
+  </nav>
+</header>
+
 <body>
-  <section>
+  <section id="mainPage" class="mainPage">
+    <div class="has1" id="has1">
+      <h1> <span>You are not indecisive,</span> <span>You just can't make the Math.</span> </h1>
+
+      <button id="mainPageBtn"><i class="gg-dice-1"></i> <span>Decide</span> <i class="gg-dice-6"></i></button>
+    </div>
+
+    <div class="foto1">
+      <img src="foto1.jpeg" alt="foto1">
+    </div>
+  </section>
+
+
+
+  <section id="testPage">
     <!-- tamam -->
     <div id="adayAdet">
       <form id="adayAdetForm" action="">
-        <input id="adayAdetNum" type="number">
-        <label for="adayAdetNum">Aday Adet</label>
+        <input id="adayAdetNum" type="number" min="2" required>
+        <label for="adayAdetNum" id="adayAdetLabel">Aday Adet</label>
         <button id="adayAdetBtn" type="submit">Tamam</button>
       </form>
     </div>
     <!-- tamam -->
     <div id="adayName">
       <form id="adayNameForm" action="">
-
-        <button id="adayNameBtn" class="hidden" type="submit">Adayların İsmimlerini Ekle</button>
+        <button id="adayNameBtn" class="hidden" type="submit"><i class="gg-dice-1"></i> <span>Adayların İsmimlerini
+            Ekle</span> <i class="gg-dice-6"></i></button>
       </form>
     </div>
 
@@ -56,7 +83,12 @@
         <button id="sonDegerlemeBtn" class="hidden">Karar Ver!</button>
       </form>
     </div>
+    <div id="yanitlar">
+
+    </div>
   </section>
+
+
 </body>
 
 </html>

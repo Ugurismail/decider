@@ -1,4 +1,12 @@
 "use strict";
+
+// entrance of test
+document.getElementById("testPage").classList.add("hidden");
+document.getElementById("mainPageBtn").addEventListener("click", () => {
+	document.getElementById("mainPage").classList.add("hidden");
+	document.getElementById("testPage").classList.remove("hidden");
+});
+
 let adaylar = [];
 let kriterler = [];
 let adayAdet = "";
@@ -10,11 +18,14 @@ document.getElementById("adayAdetForm").addEventListener("submit", (e) => {
 		document.getElementById("adayNameBtn").insertAdjacentHTML(
 			"beforebegin",
 			`
-				<label for="adayName"> ${index + 1} numaralı adayın ismi </label>
-				<input id="adayNameId" class="adayName" type="text">
+				<label id="adayNameLabel" for="adayName"> ${
+					index + 1
+				} numaralı adayın ismi </label>
+				<input id="adayNameId" class="adayName" type="text" required>
 			`,
 		);
 	}
+	document.getElementById("adayAdet").classList.add("hidden");
 	document.getElementById("adayNameBtn").classList.remove("hidden");
 });
 
@@ -128,7 +139,12 @@ document.getElementById("sonDegerlemeForm").addEventListener("submit", (e) => {
 			for (let k = i; k < neticeList.length; k += adaylar.length) {
 				netice += neticeList[k];
 			}
-			console.log(`${adaylar[i].adı} adayının toplam puanı ${netice}`);
+			document.getElementById("yanitlar").insertAdjacentHTML(
+				"beforebegin",
+				`
+			<h1>${adaylar[i].adı} adayının toplam puanı ${netice}</h1>
+			`,
+			);
 		}
 	}
 	adayPuanHesaplama(adaylar, kriterler, neticeList);
